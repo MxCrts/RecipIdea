@@ -1,6 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import "tachyons";
 
-const App = () => <div>Hello, RecipIdea!</div>;
-
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container); // Create a root.
+root.render(<App />); // Initial render
