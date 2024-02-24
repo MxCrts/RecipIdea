@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between items */
+  /* align-items: center; Align items vertically */
+  text-align: center; /* Center text for the title */
+  padding-top: 0; /* Add some padding on the sides */
+  height: 250px;
+}
+
+.header .f1 {
+  flex-grow: 1;
+  font-size: 7em;
+  color: rgb(107, 44, 7);
+  text-shadow: 2px 2px 4px orange;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.left {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  grid-gap: 10px; /* Adjust for space between buttons */
+}
+
+.MainContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}

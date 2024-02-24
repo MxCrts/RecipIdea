@@ -1,0 +1,35 @@
+.notebook {
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.paper {
+  padding: 20px;
+  background-image: url("paper.jpg");
+  background-size: cover;
+  border: 1px solid #ddd;
+}
+
+.paper input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px dashed #ccc;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  font-weight: bold; /* Make text bold */
+  font-size: 18px;
+  color: black;
+}
+
+.paper div {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap; /* Respect whitespace */
+  word-wrap: break-word;
+  font-weight: bold; /* Make text bold */
+  font-size: 18px;
+}

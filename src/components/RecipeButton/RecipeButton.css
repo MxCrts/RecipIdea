@@ -1,0 +1,38 @@
+.button-container {
+  text-align: left; /* Aligns the button to the left */
+  margin-bottom: 20px; /* Adds bottom margin */
+  display: flex; /* Enables flexbox layout */
+  justify-content: flex-start; /* Aligns children (button) to the start */
+  flex-direction: row;
+  margin-left: 15px;
+}
+
+.recipe-button {
+  height: 200px; /* Sets button height */
+  width: 350px; /* Sets button width */
+  color: white;
+  border-radius: 3px; /* Rounded corners */
+  font-size: 1.2em; /* Text size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .button-container {
+    text-align: center; /* Aligns the button to the left */
+    margin-bottom: 20px; /* Adds bottom margin */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Aligns children (button) to the start */
+  }
+
+  .recipe-button {
+    width: 70%; /* Button takes full container width on smaller screens */
+    height: auto; /* Height adjusts to content */
+    padding: 10px; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+}

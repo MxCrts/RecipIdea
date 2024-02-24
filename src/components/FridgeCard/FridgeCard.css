@@ -1,0 +1,94 @@
+.card {
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%; /* Start with a higher percentage for smaller screens */
+    max-width: 900px; /* Max out at a reasonable size for larger screens */
+    margin: 20px; /* Increase margin for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, "Courier", Times, serif;
+    background-image: url("cardBackground.jpg"); /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  
+  .Ingredient {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .Instructions {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .Instructions li {
+    margin-bottom: 5px;
+  }
+  
+  .ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 10px;
+  
+    overflow: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%; /* Use full width on smaller screens */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align contents */
+    }
+  
+    .card {
+      width: 90%; /* Allow more width for very small screens */
+    }
+  
+    .container img {
+      width: 100%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    /* Example of how you might style .Title, .Lien for responsiveness */
+    .Title,
+    .Lien {
+      width: 100%; /* Ensure full-width use within the card for consistent alignment */
+      text-align: center; /* Center-align text */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+  
+    /* Additional styles for .container, .containerLeft, and .containerRight for responsiveness */
+    .container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  }
+  
+  .Title {
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .container img {
+    width: 100%; /* Make the image responsive */
+    max-width: 350px; /* Limiting image width while maintaining aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .Lien {
+    margin-bottom: 10px;
+  }
+  
