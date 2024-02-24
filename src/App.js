@@ -89,7 +89,7 @@ class App extends Component {
       <div className="App tc">
         <div className="header tc">
           <Logo />
-          <h1 className="f1">RecipIdea</h1>
+          <h1 className="title f1">RecipIdea</h1>
           {isDataFetched && (
             <button
               onClick={this.resetView}
@@ -111,37 +111,37 @@ class App extends Component {
           <div className="MainContainer">
             <div className="left">
               <RecipeButton
-                buttonText="Fais moi Rêver ..."
+                buttonText="Choose for Me ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.random}
               />
               <RecipeButton
-                buttonText="Envie de Viande ?"
+                buttonText="Meat ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548&include-tags=meats"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.viande}
               />
               <RecipeButton
-                buttonText="Envie de Poisson ?"
+                buttonText="Fish ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548&include-tags=fish"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.poisson}
               />
               <RecipeButton
-                buttonText="Plutôt Végétarien ?"
+                buttonText="Vegetarian ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548&include-tags=vegetarian"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.vegetarien}
               />
               <RecipeButton
-                buttonText="Plutôt Végétalien ?"
+                buttonText="Vegan ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548&include-tags=vegan"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.vegetalien}
               />
               <RecipeButton
-                buttonText="Plutôt Sucré ?"
+                buttonText="Dessert maybe ?"
                 fetchUrl="https://api.spoonacular.com/recipes/random?apiKey=151e529e2ddf4587897dded6f08bb548&include-tags=dessert"
                 onButtonSubmit={this.onButtonSubmit}
                 backgroundImage={images.dessert}
@@ -149,7 +149,7 @@ class App extends Component {
             </div>
             <div className="right">
               <FridgeButton
-                buttonText="Tu as quoi dans ton frigo ?"
+                buttonText="What's in the fridge ?"
                 ingredients={notebookInputs}
                 onButtonSubmit={this.onFridgeButtonSubmit}
                 apiKey="6eea49630443486cb22cbee929c5c78e"

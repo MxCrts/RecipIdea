@@ -4,3 +4,47 @@
   margin-top: 20px;
   margin-left: 10px;
 }
+
+.Tilt-inner img {
+  width: 200px; /* Default width */
+  height: 200px; /* Default height */
+  transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for resizing */
+}
+
+/* For viewports below 1150px */
+@media (max-width: 1150px) {
+  .Tilt-inner img {
+    width: 150px; /* Smaller width */
+    height: 150px; /* Smaller height */
+  }
+}
+
+/* For viewports below 800px */
+@media (max-width: 800px) {
+  .Tilt-inner img {
+    width: 100px; /* Even smaller width */
+    height: 100px; /* Even smaller height */
+  }
+}
+
+.Tilt {
+  width: 200px; /* Default width */
+  height: 200px; /* Default height */
+  transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for resizing */
+}
+
+/* For viewports below 1150px */
+@media (max-width: 1150px) {
+  .Tilt {
+    width: 150px; /* Smaller width */
+    height: 150px; /* Smaller height */
+  }
+}
+
+/* For viewports below 800px */
+@media (max-width: 800px) {
+  .Tilt {
+    width: 100px; /* Even smaller width */
+    height: 100px; /* Even smaller height */
+  }
+}

@@ -19,20 +19,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .button-container {
-    text-align: center; /* Aligns the button to the left */
-    margin-bottom: 20px; /* Adds bottom margin */
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Aligns children (button) to the start */
-  }
-
-  .recipe-button {
-    width: 70%; /* Button takes full container width on smaller screens */
-    height: auto; /* Height adjusts to content */
-    padding: 10px; /* Adjust padding for smaller screens */
-    text-align: center;
-  }
-}

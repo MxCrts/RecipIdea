@@ -26,7 +26,6 @@ body {
 
 .header .f1 {
   flex-grow: 1;
-  font-size: 7em;
   color: rgb(107, 44, 7);
   text-shadow: 2px 2px 4px orange;
 }
@@ -36,6 +35,12 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+h1.f1 {
+  font-size: calc(
+    4rem + 2vw
+  ); /* Adjust the base size and viewport factor as needed */
 }
 
 .left {
@@ -49,4 +54,39 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+}
+
+@media (max-width: 1150px) {
+  .MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content of .left and .right */
+  }
+
+  .left,
+  .right {
+    width: 100%; /* Optional: Adjust if you want to limit the width */
+    display: flex;
+    justify-content: center; /* Centers the children elements horizontally */
+    flex-wrap: wrap; /* Ensures flexibility for inner elements */
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .MainContainer .left {
+    grid-template-columns: 1fr; /* One column */
+  }
+}
+
+@media (min-width: 1800px) {
+  h1.f1 {
+    font-size: 7rem; /* Adjust as needed */
+  }
 }
