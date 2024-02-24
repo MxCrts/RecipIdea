@@ -78,6 +78,10 @@ class App extends Component {
     this.setState({ lastButtonClicked: "fridge" });
   };
 
+  resetView = () => {
+    this.setState({ isDataFetched: false, lastButtonClicked: null });
+  };
+
   render() {
     const { isDataFetched, recipeData, notebookInputs, lastButtonClicked } =
       this.state;
@@ -86,6 +90,15 @@ class App extends Component {
         <div className="header tc">
           <Logo />
           <h1 className="f1">RecipIdea</h1>
+          {isDataFetched && (
+            <button
+              onClick={this.resetView}
+              style={{ position: "absolute", top: "20px", right: "20px" }}
+              className="grow pointer f3 b bg-light-yellow bw2 br2"
+            >
+              Get Back
+            </button>
+          )}
         </div>
         {isDataFetched ? (
           <>

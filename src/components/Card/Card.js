@@ -4,16 +4,15 @@ import Rellax from "rellax";
 
 const Card = ({ recipeData }) => {
   useEffect(() => {
-    // Initialize Rellax for parallax effect
-    new Rellax(".rellax", {
-      // You can add options here
+    // Initialize Rellax for parallax effect and assign it to a variable
+    const rellax = new Rellax(".rellax", {
       speed: -2,
       center: false,
     });
 
     // Cleanup function to destroy Rellax instance on component unmount
     return () => {
-      if (this.rellax) this.rellax.destroy();
+      rellax.destroy();
     };
   }, []); // Empty dependency array means this effect runs once on mount
 
